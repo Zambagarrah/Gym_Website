@@ -1,0 +1,61 @@
+.level {
+    text-transform: uppercase;
+    font-family: var();
+}
+
+.level-title {
+    font-size: 7rem;
+    font-weight: bolder;
+    text-transform: uppercase;
+    font-family: var(--header1-font);
+    color: #000000;
+}
+
+.sub{
+    color: #ff0000;
+}
+
+.level-container {
+    color: #ffffff;
+    background-color: black;
+    border-radius: 3rem;
+}
+
+.level-container {
+    flex-wrap: wrap; /* Allow items to wrap to the next line if necessary */
+    gap: 3rem; /* Optional: Add some space between the items */
+    flex-direction: column;
+}
+
+.program {
+    padding: 2rem;
+}
+
+.program-title {
+    font-size: 4rem;
+    font-family: var(--header1-font);
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.program-details {
+    flex-wrap: wrap;
+}
+
+.details-dets {
+    margin-left: 3rem;
+    font-family: var(--header2-font);
+    font-size: 3rem;
+    font-weight: 900;
+}
+
+.details-dets i {
+    color: #ff0000
+}
+
+.level-separator {
+    background-color: #ffffff;
+    width: 95%;
+    height: 0.5rem;
+    color: transparent;
+}

@@ -1,0 +1,98 @@
+.gallery {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+.gallery-title {
+    font-family: var(--header1-font);
+    font-size: 5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.gallery .container .gallery-section {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    border-radius: 0.5rem;
+}
+
+.gallery-item {
+    position: relative;
+}
+
+.gallery-item::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-color: #ff0000;
+    border-radius: 0.5rem;
+    transform: scale(0);
+    opacity: 0;
+    transition: 0.4s ease-in-out;
+}
+
+.gallery-icon,
+.gallery-item-title {
+    position: absolute;
+    font-size: 5rem;
+    opacity: 0;
+}
+
+.gallery-icon {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #ff0000;
+    color: #ffffff;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    margin-top: 3rem;
+    transition: 0.3s ease-in-out;
+    transition-delay: 0.3s;
+}
+
+.gallery-item-title {
+    bottom: 0;
+    inset-inline: 1.75rem;
+    background-color: #ff000063;
+    text-align: center;
+    padding-block: 1.25rem;
+    transition: 0.5s ease-in-out;
+}
+
+.img-wrapper {
+    background-color: #ffffff;
+}
+
+.gallery-img {
+    width: 100%;
+    height: 30rem;
+    object-fit: cover;
+    border: 0.5rem solid #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+/* ------------ */
+/* Hover Effect */
+/* ------------ */
+
+.gallery-item:hover::before {
+    transform: scalesudo servive (1);
+    opacity: 0.7;
+}
+
+.gallery-item:hover .gallery-icon,
+.gallery-item:hover .gallery-item-title {
+    opacity: 1;
+}
+
+.gallery-item:hover .gallery-icon {
+    margin-top: 0;
+}
+
+.gallery-item:hover .gallery-item-title {
+    bottom: 1.75rem;
+}

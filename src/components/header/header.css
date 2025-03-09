@@ -1,0 +1,113 @@
+.header {
+  padding: 0rem;
+  border-bottom: var(--border);
+  transition: background-color 0.3s ease-in-out, padding 0.3s ease-in-out;
+  backdrop-filter: none;
+}
+
+.header.active {
+  background-color: rgba(59, 59, 59, 0.459); /* Example of background color on scroll */
+  border-bottom: 1px dotted var(--highlight);
+}
+
+.logo {
+  color: var(--white);
+  width: 100px;
+  font-size: 2rem;
+  font-family: var(--logo-font);
+  font-weight: var(--w1);
+  transition: color 0.5s ease-in-out;
+}
+
+.logo i {
+  font-size: 5rem;
+  margin-right: 1.5rem;
+}
+
+.logo:hover {
+  color: var(--highlight);
+}
+
+.nav-bar {
+  padding: 1rem;
+}
+
+.nav-items {
+  display: flex; /* Ensure nav items are displayed in a row by default */
+}
+
+.nav-items a {
+  margin: 0 3rem;
+  font-size: 2rem;
+  color: var(--white);
+  font-family: var(--header1-font);
+  font-weight: var(--w1);
+  text-transform: uppercase;
+  transition: color 0.3s ease-in-out;
+}
+
+.nav-items a:hover {
+  color: var(--highlight);
+}
+
+
+#menu-btn {
+  font-size: 2.5rem;
+  color: var(--white);
+  cursor: pointer;
+  display: none; /* Hidden by default */
+  font-weight: var(--w1);
+  transition: color 0.3s ease;
+}
+
+#menu-btn:hover,
+#menu-btn:active {
+  color: var(--highlight);
+}
+
+
+
+@media (max-width: 768px) {
+  .header {
+    visibility: visible; /* Show header in mobile view */
+    opacity: 1;
+    transition: visibility 0s, opacity 0.3s ease-in-out;
+  }
+
+  #menu-btn {
+    display: inline-block; /* Show menu button */
+    transition: transform 0.2s linear;
+  }
+
+  #menu-btn.fa-times {
+    transform: rotate(180deg);
+  }
+
+  .nav-items {
+    position: absolute;
+    top: 99%; 
+    left: 0; 
+    right: 0;
+    background-color: transparent;
+    backdrop-filter: blur(10px);
+    border-top: var(--border);
+    border-bottom: var(--border);
+    padding: 3rem 0; 
+    text-align: center;
+    flex-flow: column;
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    transition: clip-path 0.2s linear;
+    display: none; /* Hide by default */
+  }
+
+  .nav-items.active {
+    display: flex; /* Show nav items when active */
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+
+  .nav-items a {
+    margin: 1rem 0;
+    font-size: 2rem;
+    padding: 3rem;
+  }
+}

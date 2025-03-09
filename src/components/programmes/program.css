@@ -1,0 +1,23 @@
+.programs {
+    background-color: rgb(0, 0, 0);
+}
+
+.program-title {
+    font-family: var(--header1-font);
+    font-size: 6rem;
+    font-weight: var(--w1);
+    color: var(--white);
+    text-transform: uppercase;
+    margin: 3rem;
+    text-align: center;
+}
+
+.program {
+    gap: 2rem;
+    grid-template-columns: 0.5fr;
+}
+
+.img-wrapper {
+    overflow: hidden; /* Ensures the image fits nicely */
+}
+

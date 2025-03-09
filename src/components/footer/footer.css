@@ -1,0 +1,109 @@
+.footer {
+    background-color: #000000;
+}
+
+.subscribe-title {
+    margin-left: 5%;
+    color: var(--white);
+    width: 100%;
+    font-size: 3rem;
+    font-family: var(--logo-font);
+    font-weight: var(--w1);
+    transition: color 0.5s ease-in-out;
+}
+
+.foot {
+    grid-template-columns: repeat(2, 1fr);
+    border-bottom: 1px double #ffffff;
+    flex-wrap: wrap;
+}
+
+.foot-items {
+    flex-grow: 1;
+    flex-basis: 1fr;
+}
+
+.logo-footer {
+    margin-left: 5%;
+    color: var(--white);
+    width: 300px;
+    font-size: 3rem;
+    font-family: var(--logo-font);
+    font-weight: var(--w1);
+    transition: color 0.5s ease-in-out;
+}
+
+.logo-footer i {
+   font-size: 5rem;
+   margin-right: 1.5rem;
+}
+  
+.logo-footer:hover {
+  color: var(--highlight);
+}
+
+.socials {
+    margin: 3rem;
+}
+
+.social-icons {
+    margin: 1rem;
+}
+
+.icon {
+    margin: 1.5rem;
+    padding: 1rem;
+    font-size: 1rem;
+}
+
+.find-us-info {
+    margin: 3rem;
+}
+
+.contact-details {
+    color: #ffffff;
+    font-size: 2rem;
+    font-family: var(--header1-font);
+    font-weight: var(--w1);
+    text-transform: capitalize;
+    line-height: 2;
+    margin: 3rem;
+}
+
+.subscribe {
+    margin: 3rem;
+}
+
+.subscribe-text {
+    color: #ffffff;
+    font-size: 2rem;
+    font-family: var(--header1-font);
+    font-weight: var(--w1);
+    text-transform: capitalize;
+    line-height: 2;
+    margin: 3rem;
+}
+
+.subscribe-email-input {
+    background-color: #fff;
+    width: 100%;
+    height: 5rem;
+}
+
+input {
+    width: 100%;
+    height: 100%;
+}
+
+input::placeholder {
+    font-size: 3rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.copyright {
+    font-size: 2rem;
+    font-family: var(--second-font);
+    margin: 3rem;
+    color: #ffffff;
+}

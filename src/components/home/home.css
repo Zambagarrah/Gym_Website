@@ -1,0 +1,90 @@
+.home {
+    background: url(../../assets/backgrounds/wallpaperflare.com_wallpaper.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.content {
+    padding: 2rem;
+}
+
+.content-main {
+    grid-column: 1;
+    text-align: left;
+    width: 650px;
+}
+
+.content-main h3 {
+    font-family: var(--header1-font);
+    font-size: 6rem;
+    font-weight: var(--w1);
+    color: var(--highlight);
+    text-transform: uppercase;
+}
+
+.content-main p {
+    font-size: 2rem;
+    font-weight: var(--w1);
+    color: var(--white);
+    margin-bottom: 2rem;
+    font-family: var(--body-font);
+    line-height: 2;
+    padding: 1rem 0;
+}
+
+.ratings {
+    font-size: 1.7rem;
+    font-weight: 400;
+    background-color: var(--white);
+    border-radius: 0.5rem .5rem var(--rad2) .5rem;
+    padding: 1rem;
+    margin: 3rem 0;
+}
+
+.rating-separator {
+    margin: 0 1rem;
+    font-size: 4rem;
+    font-weight: bold;
+}
+
+.stars {
+    padding-left: 10%;
+    color: var(--highlight);
+}
+
+.rating1 {
+    grid-template-columns: repeat(2, 1fr);
+    font-weight: var(--w3);
+}
+
+.social-media-icon {
+    font-size: 5rem;
+    color: var(--black);
+    margin: 0 1rem;
+}
+
+@media (max-width: 768px) {
+    .home {
+        background-position: left;
+    }
+
+    .home .content {
+        width: auto;
+    }    
+}
+
+@media (max-width: 450px) {
+    .home .content h3 {
+        font-size: 4rem;
+    }
+
+    .heading {
+        font-size: 3rem;
+    }
+}
+
+
+
+
+
+

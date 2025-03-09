@@ -1,0 +1,72 @@
+.review-page-title {
+    font-size: 6rem;
+    font-family: var(--header1-font);
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 4rem;
+    color: #000000;
+}
+
+.review-card {
+    position: relative;
+    background-color: var(--container-color);
+    border: 1px solid #000000;
+    padding: 1.5rem 2rem;
+    border-radius: 1.5rem;
+    margin-bottom: 6rem;
+}
+
+.title .reviewer-info .name {
+    color: #000000;
+    font-size: 2.2rem;
+    font-family: var(--header1-font);
+    margin-bottom: -0.5rem;
+}
+
+.title .reviewer-info .date {
+    color: #000000;
+    font-size: 1.2rem;    
+    font-family: var(--header1-font);
+}
+
+.title i {
+    margin-left: 25%;
+    font-size: 3rem;
+}
+
+.rating i {
+    font-size: 2rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.rating .star{
+    color: #ff0000;
+}
+
+.rating .check {
+    color: #00aeff;
+    margin-left: 1rem;
+}
+
+.review-statement {
+    font-size: 1.7rem;
+    color: #000000;
+    margin-bottom: 2rem;
+    font-family: var(--header1-font);
+    text-transform: none;
+    line-height: 2.5rem;
+}
+
+a .more {
+    color: #000000;
+}
+
+/* Swiper Class */
+.swiper-pagination-bullet {
+    background-color: #333333 !important;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: #ff0000 !important;
+}

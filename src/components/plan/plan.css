@@ -1,0 +1,112 @@
+.plan {
+    background-color: #000000;
+    color: #ffffff;
+    flex-wrap: wrap;
+}
+
+.title .plan-title {
+    font-size: 7rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+    font-family: var(--header1-font);
+    color: #ffffff;
+}
+
+.title .plan-sub {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    font-family: var(--header2-font);
+    color: #ffffff;
+}
+
+.card-holder {
+    gap: 4rem;
+}
+
+.card-holder .cards {
+    background-color: #ffffff;
+    color: #000000;
+    width: 100%;
+    border-radius: 1rem;
+    align-content: center;
+    padding: 2rem;
+    transition: 0.3s ease-in-out;
+}
+
+.card-holder .cards:hover {
+    background-color: #ff000081;
+    color: #ffffff;
+    width: calc(100% + 4rem);  
+}
+
+.card-holder .cards .card-title {
+    font-family: var(--header1-font);
+    font-size: 3.5rem;
+    font-weight: bold;
+}
+
+.card-holder .cards .card-price {
+    font-family: var(--header1-font);
+    font-size: 5rem;
+    font-weight: bold;
+}
+
+.card-holder .cards .card-info {
+    font-size: 2rem;
+    padding-left: 30%;
+    width: 40rem;
+    line-height: 1;
+    font-weight: bold;
+    margin-bottom: 3rem;
+}
+
+.card-holder .cards .card-info p {
+    font-family: var(--header2-font);
+}
+
+.card-holder .cards .btns {
+    border-radius: 5rem;
+    padding: 1rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    background-color: #ff0000;
+    color: #ffffff;
+    cursor: pointer;
+    font-family: var(--header1-font);
+    align-content: center;
+}
+
+.card-holder .main {
+    position: relative;
+    background-color: #ff0000;
+    color: #ffffff;
+    width: calc(100% + 4rem);
+    box-shadow: 0 4px 15px rgb(255, 0, 0);
+}
+
+.card-holder .main .card-features {
+    font-family: var(--header1-font);
+    font-size: 2rem;
+}
+
+.card-holder .main .card-price-before {
+    font-family: var(--header1-font);
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.card-holder .main .offer {
+    font-size: 7rem;
+    color: #fda138;
+    position: absolute;
+    top: -3rem;
+    right: -3rem;
+}
+
+.card-holder .main .btns {
+    background-color: #ffffff;
+    color: #000000;
+    width: 100%;
+    padding: 1.5rem;
+}
