@@ -1,7 +1,7 @@
-🏋️‍♂️ Gym Website
+Gym Website
 Welcome to Gym Website, your one-stop solution for staying fit and healthy! This project is designed to help gym enthusiasts explore facilities, schedules, and services with an intuitive and user-friendly interface. Whether you're building a personal workout log, promoting a fitness center, or creating a community hub for health-conscious individuals, this project has you covered.
 
-🚀 Features
+Features
 Responsive Design: Optimized for all screen sizes, from mobile to desktop.
 
 Interactive Classes: Browse and register for fitness classes easily.
@@ -12,7 +12,7 @@ Trainer Profiles: Get to know the experts behind your training sessions.
 
 Dynamic Schedules: View updated timetables for various activities.
 
-🔧 Tech Stack
+ Tech Stack
 Frontend: HTML, CSS, Bootstrap
 
 Backend: Django (Python)
@@ -21,10 +21,10 @@ Database: SQLite
 
 Version Control: Git and GitHub
 
-🖼️ Visual Preview
+ Visual Preview
 (Add a screenshot or mockup here)
 
-🛠️ Installation
+ Installation
 Follow these steps to get a local copy up and running:
 
 Clone the Repository:
@@ -55,7 +55,7 @@ Run the Development Server:
 ```
 python manage.py runserver
 ```
-💡 Future Enhancements
+ Future Enhancements
 Integration of online payment systems.
 
 AI-powered personal training recommendations.
